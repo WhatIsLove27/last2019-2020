@@ -1,0 +1,3100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Научись понимать и писать код </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+		@font-face{
+			src:url(10467.ttf);
+            font-family: my-font;
+		}
+		.logo{
+			margin-left: 34%; 
+			margin-top: 18%;
+			position: absolute;
+		}
+		.teacher{
+			margin-left: 34%; 
+			margin-top: 18%;
+			position: absolute;
+			display: none;
+		}
+		.location1{
+			width: 250px;
+			height: 250px;
+			border-radius: 100%;			
+			position: absolute;
+			left: 20%;
+			top: 60%
+		}
+		.location1:hover{
+			height: 280px;
+			width: 280px;
+			box-shadow: 0 0 0 4px #572ab8
+		}
+		.location2{
+			width: 250px;
+			height: 250px;
+			border-radius: 100%;
+			position: absolute;
+			left: 80%;
+			top: 51%
+		}
+		.location2:hover{
+			height: 280px;
+			width: 280px;
+			box-shadow: 0 0 0 4px #572ab8
+		}
+		.location3{
+			width: 250px;
+			height: 250px;
+			border-radius: 140%;
+			position: absolute;
+			left: 38%;
+			top: 20%
+		}
+		.location3:hover{
+			height: 280px;
+			width: 280px;
+			box-shadow: 0 0 0 4px #572ab8
+		}
+		.btn{
+			background-color: #5f228a;
+			border-radius: 15px;
+			color: white
+		}
+		.btn1{
+			background-color: #5f228a;
+			border-radius: 15px;
+			color: white
+		}
+		.btn2{
+			background-color: #5f228a;
+			border-radius: 15px;
+			color: white
+		}
+		.btn3{
+			background-color: #5f228a;
+			border-radius: 15px;
+			color: white
+		}
+		.btn4{
+			background-color: #5f228a;
+			border-radius: 15px;
+			color: white
+		}
+		.div1{
+			height: 125px;
+			width: 119px;
+			position: absolute;
+			transition: 0.5s
+		}
+		.div2{
+			height: 120px;
+			width: 113px;
+			position: absolute;
+			transition: 0.5s
+		}
+		.div3{
+			height: 120px;
+			width: 131px;
+			position: absolute;
+			transition: 0.5s
+		}
+		.div4{
+			height: 102px;
+			width: 115px;
+			position: absolute;
+			transition: 0.5s
+		}
+		.div5{
+			height: 124px;
+			width: 137px;
+			position: absolute;
+			transition: 0.5s
+		}
+		.div6{
+			height: 121px;
+			width: 117px;
+			position: absolute;
+			transition: 0.5s
+		}
+		.div7{
+			height: 120px;
+			width: 120px;
+			position: absolute;
+		}
+		.div8{
+			height: 100px;
+			width: 40px;
+			position: absolute;
+		}
+		.div9{
+			height: 100px;
+			width: 40px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body style="background-color: #1b1b1b; " class="body1" >
+	<div class="logo">
+		<img src="logo_white.png" > 
+	</div>
+	<div class="teacher">
+		<img src="teacher.png" style="width: 200px">
+	</div>
+	<div style="margin-left: 44%; margin-top: 15%;position: absolute; background-color: #3d3d3d; color: white; width: 400px; font-family: my-font; border-radius: 10px; display: none" class="py-2 px-2 text">
+		<b>Привет, я Алексей Илларионов, и это моя IT школа программистов. Ты пройдёшь маленький курс по программированию. Ты узнаешь много нового: что такое программирование, как писать код, и как создавать код.</b>
+	</div>
+	<div class="main" style="display: none">
+		<div style="background-image: url(earth.png); background-size: 100% 100%;padding-top: 100px; text-align: center; padding-left: 5px; font-size: 25px" class="location1">
+			<b style="color: #f03ac2; font-family: my-font;  ">Теория</b>
+		</div>
+		<div style="background-image: url(mars.png); background-size: 100% 100%; padding-top: 80px; text-align: center; padding-left: 5px; font-size: 20px" class="location2" "> <b style="color: white; font-family: my-font;  ">Основы программирования</b>
+		</div>
+		<div style="background-image: url(jupyter.png); background-size: 100% 100%;padding-top: 100px; text-align: center; padding-left: 5px; font-size: 20px" class="location3">
+			<b style="color:red; font-family: my-font;  ">Найди</b>
+		</div>
+		<div style="margin-left: 14%; margin-top: 1%;position: absolute; background-color: #3d3d3d; color: white; width: 400px; font-family: my-font; border-radius: 10px; " class="py-2 px-2 ">
+			<b>Нажимай на планеты, и начинай учиться. Удачи!</b>
+		</div>
+		<div style="margin-top: 10%; margin-left: 5%">
+			<img src="teacher.png" style="width: 200px">
+		</div>
+	</div>	
+		
+
+	<div class="loc2 mt-5 " style="display: none">
+		<div class="loc2_div px-2 py-2 " style="width: 40%;  margin-left: auto; margin-right: auto; background-color: #e0c1f5; box-shadow: 10px red ; border-radius: 15px" >
+			<div style="text-align: center; width: 700px;margin-right: auto; margin-left: auto"> 
+				<b style="font-size: 25px; " class=" quest">Чему будет равно a?</b>
+			</div>
+			<div style="background-color: white; " class="col-10 mx-auto zadacha py-3">
+				<b class="text1 col-12">let a = (1,5 - 1) * 2;</b>
+				<br class="br1">
+ 				<b class="text2 col-12">alert(a);</b>
+ 				<br style="display: none" class="br2">
+ 				<b class="text3 col-12"></b>
+ 				<br style="display: none" class="br3">
+ 				<b class="text4 col-12"></b>
+ 				<br style="display: none" class="br4">
+ 				<b class="text5 col-12"></b>
+ 				<br style="display: none" class="br5">
+ 				<b class="text6 col-12"></b>
+ 				<br style="display: none" class="br6">
+ 				<b class="text7 col-12"></b>
+ 				<br style="display: none" class="br7">
+ 				<b class="text8 col-12"></b>
+ 				<br style="display: none" class="br8">
+ 				<b class="text9 col-12"></b>
+ 				<br style="display: none" class="br9">
+ 				<b class="text10 col-12"></b>
+ 				<br style="display: none" class="br10">
+ 				<b class="text11 col-12"></b>				
+			</div>
+			<div class="col-4 	mx-auto py-3">
+				<input type="text" id="login" value="" placeholder="Введите ответ" style="width: 220px ">				
+			</div>			
+			<div style="width: 100px; margin-left: auto; margin-right: auto; padding-top: 10px">
+				<button class="btn ">Продолжить</button>
+			</div>			
+		</div>
+		<div class="loc2_win px-2 py-2 " style="width: 40%;  margin-left: auto; margin-right: auto; background-color: #e0c1f5; box-shadow: 10px red ; border-radius: 15px; display: none" >
+			<div style="text-align: center; width: 700px;margin-right: auto; margin-left: auto"> 
+				<b style="font-size: 25px; " >Вы набрали </b>
+			</div>
+			<div style="text-align: center; width: 700px;margin-right: auto; margin-left: auto"> 
+				<b style="font-size: 25px; " class="txtscore"></b>
+			</div>
+			<div style="text-align: center; width: 700px;margin-right: auto; margin-left: auto"> 
+				<b style="font-size: 25px; " >баллов</b>				
+			</div>
+			<div style="width: 100px; margin-left: auto; margin-right: auto; padding-top: 10px">
+				<button class="btn1 ">Продолжить</button>
+			</div>			
+		</div>
+	</div>
+
+	<div class="loc1 mt-4" style="display: none">
+		<div class="loc2_teor1 px-2 py-2 " style="width: 40%;  margin-left: auto; margin-right: auto; background-color: #e0c1f5; box-shadow: 10px red ; border-radius: 15px; display: none" >
+			<div style="text-align: center; width: 700px;margin-right: auto; margin-left: auto"> 
+				<b style="font-size: 25px; " class=" quest">Пора узнать теорию по программированию</b>
+			</div>
+			<div style="text-align: center; width: 700px;margin-right: auto; margin-left: auto"> 
+				<b style="font-size: 16px; " class=" quest">Что такое JavaScript?</b>
+			</div>
+			<div style="background-color: white; " class="col-10 mx-auto zadacha py-3">
+				<p><b>JavaScript</b>-Мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили. Является реализацией стандарта ECMAScript.</p>	
+				<p><b>JavaScript</b> обычно используется как встраиваемый язык для программного доступа к объектам приложений. Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам.</p>
+				<p><b>JavaScript</b> является объектно-ориентированным языком, но используемое в языке прототипирование обуславливает отличия в работе с объектами по сравнению с традиционными класс-ориентированными языками. Кроме того, JavaScript имеет ряд свойств, присущих функциональным языкам — функции как объекты первого класса, объекты как списки, карринг, анонимные функции, замыкания — что придаёт языку дополнительную гибкость.</p>
+				<p>Несмотря на схожий с Си синтаксис, JavaScript по сравнению с языком Си имеет коренные отличия:</p>
+				<li><b>объекты с возможностью интроспекции;</b></li>
+				<li><b>функции как объекты первого класса;</b></li>
+				<li><b>автоматическое приведение типов;</b></li>
+				<li><b>автоматическая сборка мусора;</b></li>
+				<li><b>анонимные функции.</b></li>
+				<p>В языке отсутствуют такие полезные вещи, как:</p>
+				<li><b>стандартная библиотека: в частности, отсутствует интерфейс программирования приложений по работе с файловой системой, управлению потоками ввода-вывода, базовых типов для бинарных данных;</b></li>
+				<li><b>стандартные интерфейсы к веб-серверам и базам данных;</b></li>
+				<li><b>система управления пакетами, которая бы отслеживала зависимости и автоматически устанавливала их.</b></li>
+
+
+
+
+
+
+			</div>
+						
+			<div style="width: 100px; margin-left: auto; margin-right: auto; padding-top: 10px">
+				<button class="btn3 ">Продолжить</button>
+			</div>			
+		</div>
+
+		<div class="loc2_teor2 px-2 py-2 " style="width: 40%;  margin-left: auto; margin-right: auto; background-color: #e0c1f5; box-shadow: 10px red ; border-radius: 15px" >
+			<div style="text-align: center; width: 700px;margin-right: auto; margin-left: auto"> 
+				<b style="font-size: 25px; " class=" quest">Пора узнать теорию по программированию</b>
+			</div>
+			<div style="text-align: center; width: 700px;margin-right: auto; margin-left: auto"> 
+				<b style="font-size: 16px; " class=" quest">Что такое HTML?</b>
+			</div>
+			<div style="background-color: white; " class="col-10 mx-auto zadacha py-3">
+				<p><b>HTML</b>-стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML. Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства.</p>
+				<p><b>HTML</b> - теговый язык разметки документов. Любой документ на языке HTML представляет собой набор элементов, причём начало и конец каждого элемента обозначается специальными пометками — тегами. Элементы могут быть пустыми, то есть не содержащими никакого текста и других данных. В этом случае обычно не указывается закрывающий тег  . Кроме того, элементы могут иметь атрибуты, определяющие какие-либо их свойства. Атрибуты указываются в открывающем теге. Вот примеры фрагментов HTML-документа:</p>
+				<li><b>strong>Текст между двумя тегами — открывающим и закрывающим./strong></b></li>
+				<li><b>a href="http://www.example.com">Здесь элемент содержит атрибут href, то есть гиперссылку./a></b></li>
+				<li><b>А вот пример пустого элемента: br</b></li>
+				<p>Регистр, в котором набрано имя элемента и имена атрибутов, в HTML значения не имеет . Элементы могут быть вложенными. Например, следующий код:</p>
+				<div class="mw-highlight mw-highlight-lang-html mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>HTML Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+         <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>
+            Этот текст будет полужирным, <span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>а этот — ещё и курсивным<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>.
+         <span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+				
+			</div>
+						
+			<div style="width: 100px; margin-left: auto; margin-right: auto; padding-top: 10px">
+				<button class="btn2 ">Продолжить</button>
+			</div>			
+		</div>
+ 
+		
+	</div>
+
+
+<!-- loc3 -->
+	<div class="loc3 mt-5 " style="display: none">
+		<div class="loc3_div px-2 py-2 " style="width: 40%;  margin-left: auto; margin-right: auto; background-color: #e0c1f5; box-shadow: 10px red ; border-radius: 15px" >
+			<div style="text-align: center; width: 700px;margin-right: auto; margin-left: auto"> 
+				<b style="font-size: 25px; " class="naxod">Найди div с красным цветом с сторонами 120px на 120px</b>
+			</div>	
+		</div>
+	</div>
+
+	
+	<script type="text/javascript">
+		let body1= document.querySelector(".body1")
+		let logo = document.querySelector(".logo")
+		let teacher = document.querySelector(".teacher")
+		let text = document.querySelector(".text") 	
+		let location1= document.querySelector(".location1")
+		let location2= document.querySelector(".location2")
+		let location3= document.querySelector(".location3")
+		let main = document.querySelector(".main")
+		let loc2 = document.querySelector(".loc2")
+		let btn = document.querySelector(".btn")
+		let btn1 = document.querySelector(".btn1")
+		let btn2 = document.querySelector(".btn2")
+		let btn3 = document.querySelector(".btn3")
+		let btn4 = document.querySelector(".btn4")
+		let quest = document.querySelector(".quest")
+		let zadacha = document.querySelector(".zadacha")
+		let text1 = document.querySelector(".text1")
+		let text2 = document.querySelector(".text2")
+		let text3 = document.querySelector(".text3")
+		let text4 = document.querySelector(".text4")
+		let text5 = document.querySelector(".text5")
+		let text6 = document.querySelector(".text6")
+		let text7 = document.querySelector(".text7")
+		let text8 = document.querySelector(".text8")
+		let text9 = document.querySelector(".text9")
+		let text10 = document.querySelector(".text10")
+		let text11 = document.querySelector(".text11")
+		let br1 = document.querySelector(".br1")
+		let br2 = document.querySelector(".br2")
+		let br3 = document.querySelector(".br3")
+		let br4 = document.querySelector(".br4")
+		let br5 = document.querySelector(".br5")
+		let br6 = document.querySelector(".br6")
+		let br7 = document.querySelector(".br7")
+		let br8 = document.querySelector(".br8")
+		let br9 = document.querySelector(".br9")
+		let br10 = document.querySelector(".br10")
+		let loc1= document.querySelector(".loc1")
+		let loc2_teor1 = document.querySelector(".loc2_teor1")
+		let loc2_teor2 = document.querySelector(".loc2_teor2")
+		let loc3 = document.querySelector(".loc3")
+		let loc3_win = document.querySelector(".loc3_win")
+		let loc3_div = document.querySelector(".loc3_div")
+		let quest3 = document.querySelector(".quest3")
+		let quest4 = document.querySelector(".quest4")
+		score = 0
+		let txtscore = document.querySelector(".txtscore")
+		let loc2_win = document.querySelector(".loc2_win")
+		let loc2_div = document.querySelector(".loc2_div")
+		let div1 = document.querySelector(".div1")
+		let div3 = document.querySelector(".div3")
+		let div4 = document.querySelector(".div4")
+		let div5 = document.querySelector(".div5")
+		let div6 = document.querySelector(".div6")
+		let div7 = document.querySelector(".div7")
+		let div8 = document.querySelectorAll(".div8")
+		
+		let naxod = document.querySelector(".naxod")
+		let div9 = document.querySelector(".div9")
+		
+		
+		let showLogo = function(){
+			logo.style.display = "none"
+			teacher.style.display = "block"
+			text.style.display = "block"
+				let karta = function(){
+					teacher.style.display = "none"
+					text.style.display = "none"
+					body1.style.backgroundImage = "url(kartafon.jpg)"
+					body1.style.backgroundSize = "100% "
+					body1.style.backgroundColor = "none"
+					main.style.display = "block"
+				}
+				setTimeout(karta, 10000)
+		}
+		setTimeout(showLogo, 2000)
+		location3.onclick = function(){
+
+			main.style.display = "none"
+			loc3.style.display = "block"
+			let randomLeft = function(){
+				let num1 = Math.random()*90
+				let num = Math.round(num1)
+				return num
+			}
+			let randomTop = function(){
+				let num2 = Math.random()*80
+				let num3 = Math.round(num2)
+				return num3
+			}
+			let hp=3
+			alert("у тебя 3 жизней на всю игру, гляди внимательно")
+			let showMessage = function(){
+				let div1 = document.createElement("div")
+				div1.classList.add("div1", "bg-danger" )
+				div1.style.top = randomTop()+"%"
+				div1.style.left = randomLeft() + "%"
+				loc3.appendChild(div1)
+
+				let div2 = document.createElement("div")
+				div2.classList.add("bg-danger", "div2" )
+				div2.style.top = randomTop()+"%"
+				div2.style.left = randomLeft() + "%"
+				loc3.appendChild(div2)
+
+				let div3 = document.createElement("div")
+				div3.classList.add("bg-danger", "div3" )
+				div3.style.top = randomTop()+"%"
+				div3.style.left = randomLeft()+"%"
+				loc3.appendChild(div3)
+
+				let div4 = document.createElement("div")
+				div4.classList.add("bg-danger", "div4" )
+				div4.style.top = randomTop()+"%"
+				div4.style.left = randomLeft()+"%"
+				loc3.appendChild(div4)
+
+				let div5 = document.createElement("div")
+				div5.classList.add("bg-danger", "div5" )
+				div5.style.top = randomTop()+"%"
+				div5.style.left = randomLeft()+"%"
+				loc3.appendChild(div5)
+
+				let div6 = document.createElement("div")
+				div6.classList.add("bg-danger", "div6" )
+				div6.style.top = randomTop()+"%"
+				div6.style.left = randomLeft()+"%"
+				loc3.appendChild(div6)
+
+				let div7 = document.createElement("div")
+				div7.classList.add("bg-danger", "div7", "pravilno" )
+				div7.style.top = randomTop()+"%"
+				div7.style.left = randomLeft()+"%"
+				loc3.appendChild(div7)
+				let pravilno = document.querySelector(".pravilno")
+				
+				div1.onclick = function(){
+					alert("не правильно")
+					hp=hp-1
+					if (hp==0) {
+						alert("ты проиграл")
+						main.style.display = "block"
+						loc3.style.display = "none"
+					}
+				}
+				div2.onclick = function(){
+					alert("не правильно")
+					hp=hp-1
+					if (hp==0) {
+						alert("ты проиграл")
+						main.style.display = "block"
+						loc3.style.display = "none"
+					}
+
+
+				}
+				div3.onclick = function(){
+					alert("не правильно")
+					hp=hp-1
+					if (hp==0) {
+						alert("ты проиграл")
+						main.style.display = "block"
+						loc3.style.display = "none"
+					}
+
+
+				}
+				div4.onclick = function(){
+					alert("не правильно")
+					hp=hp-1
+					if (hp==0) {
+						alert("ты проиграл")
+						main.style.display = "block"
+						loc3.style.display = "none"
+					}
+
+				}
+				div5.onclick = function(){
+					alert("не правильно")
+					hp=hp-1
+					if (hp==0) {
+						alert("ты проиграл")
+						main.style.display = "block"
+						loc3.style.display = "none"
+					}
+
+				}
+				div6.onclick = function(){
+					alert("не правильно")
+					hp=hp-1
+					if (hp==0) {
+						alert("ты проиграл")
+						main.style.display = "block"
+						loc3.style.display = "none"
+					}
+
+				}
+				pravilno.onclick = function(){
+					alert("правильно")
+					div1.style.opacity = "0"
+					div3.style.opacity = "0"
+					div4.style.opacity = "0"
+					div5.style.opacity = "0"
+					div6.style.opacity = "0"
+					div2.style.opacity = "0"
+					
+				}
+			}
+			setTimeout(showMessage, 1000)
+			
+			
+		}
+
+
+
+
+
+		location2.onclick = function(){
+			main.style.display = "none"
+			loc2.style.display = "block"
+			
+			btn.onclick = function(){
+				if (document.getElementById("login").value == "8") {
+            		score = score+1
+            		quest.innerHTML = "Что выведет этот код?"
+            		text1.innerHTML = "alert( + 'Infinity' )";
+            		text2.innerHTML = ""
+            		br1.style.display = "none"
+            		btn.onclick = function(){
+            			if (document.getElementById("login").value == "Infinity") {
+            				score = score+1
+            				quest.innerHTML = "Чему будет равно?"
+            				text1.innerHTML = "Яблоко стоит 1.15, апельсин стоит 2.30." 
+            				text2.innerHTML = "  Сколько стоят они вместе – чему равна сумма 1.15 + 2.30 с точки зрения JavaScript?"
+            				br1.style.display = "block"
+            				btn.onclick = function(){
+            					if (document.getElementById("login").value == "345") {
+            						score = score+1
+            						quest.innerHTML = "Что выведет sayHi при вызове через setTimeout?"
+            						text1.innerHTML = "let name = 'Вася'; "   
+            						br1.style.display = "block"
+            						text2.innerHTML = "function sayHi() {"
+            						br2.style.display = "block"
+            						text3.innerHTML = "alert(name);}"
+            						br3.style.display = "block"
+            						text4.innerHTML = "setTimeout(function() {"
+            						br4.style.display = "block"
+            						text5.innerHTML = "let name = 'Петя';"
+            						br5.style.display = "block"
+            						text6.innerHTML = "sayHi();},"
+            						br6.style.display = "block"
+            						text7.innerHTML = " 1000);"
+
+            						btn.onclick = function(){
+            							if (document.getElementById("login").value == "Вася") {
+            								score = score+1
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            													if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            							if (document.getElementById("login").value != "Вася") {
+            								score = score+0
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            						}
+            					}
+            					if (document.getElementById("login").value != "345") {
+            						score = score+0
+            						quest.innerHTML = "Что выведет sayHi при вызове через setTimeout?"
+            						text1.innerHTML = "let name = 'Вася'; "   
+            						br1.style.display = "block"
+            						text2.innerHTML = "function sayHi() {"
+            						br2.style.display = "block"
+            						text3.innerHTML = "alert(name);}"
+            						br3.style.display = "block"
+            						text4.innerHTML = "setTimeout(function() {"
+            						br4.style.display = "block"
+            						text5.innerHTML = "let name = 'Петя';"
+            						br5.style.display = "block"
+            						text6.innerHTML = "sayHi();},"
+            						br6.style.display = "block"
+            						text7.innerHTML = " 1000);"
+
+            						btn.onclick = function(){
+            							if (document.getElementById("login").value == "Вася") {
+            								score = score+1
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            							if (document.getElementById("login").value != "Вася") {
+            								score = score+0
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            						}
+            					}
+            				}
+            			}
+            			if (document.getElementById("login").value != "Infinity") {
+            				score = score+0
+            				quest.innerHTML = "Чему будет равно?"
+            				text1.innerHTML = "Яблоко стоит 1.15, апельсин стоит 2.30." 
+            				text2.innerHTML = "  Сколько стоят они вместе – чему равна сумма 1.15 + 2.30 с точки зрения JavaScript?"
+            				br1.style.display = "block"
+            				btn.onclick = function(){
+            					if (document.getElementById("login").value == "345") {
+            						score = score+1
+            						quest.innerHTML = "Что выведет sayHi при вызове через setTimeout?"
+            						text1.innerHTML = "let name = 'Вася'; "   
+            						br1.style.display = "block"
+            						text2.innerHTML = "function sayHi() {"
+            						br2.style.display = "block"
+            						text3.innerHTML = "alert(name);}"
+            						br3.style.display = "block"
+            						text4.innerHTML = "setTimeout(function() {"
+            						br4.style.display = "block"
+            						text5.innerHTML = "let name = 'Петя';"
+            						br5.style.display = "block"
+            						text6.innerHTML = "sayHi();},"
+            						br6.style.display = "block"
+            						text7.innerHTML = " 1000);"
+
+            						btn.onclick = function(){
+            							if (document.getElementById("login").value == "Вася") {
+            								score = score+1
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            							if (document.getElementById("login").value != "Вася") {
+            								score = score+0
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            						}
+            					}
+            					if (document.getElementById("login").value != "345") {
+            						score = score+0
+            						quest.innerHTML = "Что выведет sayHi при вызове через setTimeout?"
+            						text1.innerHTML = "let name = 'Вася'; "   
+            						br1.style.display = "block"
+            						text2.innerHTML = "function sayHi() {"
+            						br2.style.display = "block"
+            						text3.innerHTML = "alert(name);}"
+            						br3.style.display = "block"
+            						text4.innerHTML = "setTimeout(function() {"
+            						br4.style.display = "block"
+            						text5.innerHTML = "let name = 'Петя';"
+            						br5.style.display = "block"
+            						text6.innerHTML = "sayHi();},"
+            						br6.style.display = "block"
+            						text7.innerHTML = " 1000);"
+
+            						btn.onclick = function(){
+            							if (document.getElementById("login").value == "Вася") {
+            								score = score+1
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            							if (document.getElementById("login").value != "Вася") {
+            								score = score+0
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            						}
+            					}
+            				}
+            			}
+            		}          		
+        		}
+        		if (document.getElementById("login").value != "8") {
+            		score = score+0
+            		quest.innerHTML = "Что выведет этот код?"
+            		text1.innerHTML = "alert( + 'Infinity' )";
+            		text2.innerHTML = ""
+            		br1.style.display = "none"
+            		btn.onclick = function(){
+            			if (document.getElementById("login").value == "Infinity") {
+            				score = score+1
+            				quest.innerHTML = "Чему будет равно?"
+            				text1.innerHTML = "Яблоко стоит 1.15, апельсин стоит 2.30." 
+            				text2.innerHTML = "  Сколько стоят они вместе – чему равна сумма 1.15 + 2.30 с точки зрения JavaScript?"
+            				br1.style.display = "block"
+            				btn.onclick = function(){
+            					if (document.getElementById("login").value == "345") {
+            						score = score+1
+            						quest.innerHTML = "Что выведет sayHi при вызове через setTimeout?"
+            						text1.innerHTML = "let name = 'Вася'; "   
+            						br1.style.display = "block"
+            						text2.innerHTML = "function sayHi() {"
+            						br2.style.display = "block"
+            						text3.innerHTML = "alert(name);}"
+            						br3.style.display = "block"
+            						text4.innerHTML = "setTimeout(function() {"
+            						br4.style.display = "block"
+            						text5.innerHTML = "let name = 'Петя';"
+            						br5.style.display = "block"
+            						text6.innerHTML = "sayHi();},"
+            						br6.style.display = "block"
+            						text7.innerHTML = " 1000);"
+
+            						btn.onclick = function(){
+            							if (document.getElementById("login").value == "Вася") {
+            								score = score+1
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            							if (document.getElementById("login").value != "Вася") {
+            								score = score+0
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            						}
+            					}
+            					if (document.getElementById("login").value != "345") {
+            						score = score+0
+            						quest.innerHTML = "Что выведет sayHi при вызове через setTimeout?"
+            						text1.innerHTML = "let name = 'Вася'; "   
+            						br1.style.display = "block"
+            						text2.innerHTML = "function sayHi() {"
+            						br2.style.display = "block"
+            						text3.innerHTML = "alert(name);}"
+            						br3.style.display = "block"
+            						text4.innerHTML = "setTimeout(function() {"
+            						br4.style.display = "block"
+            						text5.innerHTML = "let name = 'Петя';"
+            						br5.style.display = "block"
+            						text6.innerHTML = "sayHi();},"
+            						br6.style.display = "block"
+            						text7.innerHTML = " 1000);"
+
+            						btn.onclick = function(){
+            							if (document.getElementById("login").value == "Вася") {
+            								score = score+1
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            							if (document.getElementById("login").value != "Вася") {
+            								score = score+0
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            						}
+            					}
+            				}
+            			}
+            			if (document.getElementById("login").value != "Infinity") {
+            				score = score+0
+            				quest.innerHTML = "Чему будет равно?"
+            				text1.innerHTML = "Яблоко стоит 1.15, апельсин стоит 2.30." 
+            				text2.innerHTML = "  Сколько стоят они вместе – чему равна сумма 1.15 + 2.30 с точки зрения JavaScript?"
+            				br1.style.display = "block"
+            				btn.onclick = function(){
+            					if (document.getElementById("login").value == "345") {
+            						score = score+1
+            						quest.innerHTML = "Что выведет sayHi при вызове через setTimeout?"
+            						text1.innerHTML = "let name = 'Вася'; "   
+            						br1.style.display = "block"
+            						text2.innerHTML = "function sayHi() {"
+            						br2.style.display = "block"
+            						text3.innerHTML = "alert(name);}"
+            						br3.style.display = "block"
+            						text4.innerHTML = "setTimeout(function() {"
+            						br4.style.display = "block"
+            						text5.innerHTML = "let name = 'Петя';"
+            						br5.style.display = "block"
+            						text6.innerHTML = "sayHi();},"
+            						br6.style.display = "block"
+            						text7.innerHTML = " 1000);"
+
+            						btn.onclick = function(){
+            							if (document.getElementById("login").value == "Вася") {
+            								score = score+1
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            							if (document.getElementById("login").value != "Вася") {
+            								score = score+0
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            						}
+            					}
+            					if (document.getElementById("login").value != "345") {
+            						score = score+0
+            						quest.innerHTML = "Что выведет sayHi при вызове через setTimeout?"
+            						text1.innerHTML = "let name = 'Вася'; "   
+            						br1.style.display = "block"
+            						text2.innerHTML = "function sayHi() {"
+            						br2.style.display = "block"
+            						text3.innerHTML = "alert(name);}"
+            						br3.style.display = "block"
+            						text4.innerHTML = "setTimeout(function() {"
+            						br4.style.display = "block"
+            						text5.innerHTML = "let name = 'Петя';"
+            						br5.style.display = "block"
+            						text6.innerHTML = "sayHi();},"
+            						br6.style.display = "block"
+            						text7.innerHTML = " 1000);"
+
+            						btn.onclick = function(){
+            							if (document.getElementById("login").value == "Вася") {
+            								score = score+1
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            							if (document.getElementById("login").value != "Вася") {
+            								score = score+0
+            								quest.innerHTML = "Какое слово?"
+            								text1.innerHTML = "С помощью какого свойства можно получить значения текстовых узлов или комментариев?"
+            								br1.style.display = "none"
+            								text2.innerHTML = ""
+            								br2.style.display = "none"
+            								text3.innerHTML = ""
+            								br3.style.display = "none"
+            								text4.innerHTML = ""
+            								br4.style.display = "none"
+            								text5.innerHTML = ""
+            								br5.style.display = "none"
+            								text6.innerHTML = ""
+            								br6.style.display = "none"
+            								text7.innerHTML = " "
+
+            								btn.onclick = function(){
+            									if (document.getElementById("login").value == "innerHTML") {
+		            								score = score+1
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            									if (document.getElementById("login").value != "innerHTML") {
+		            								score = score+0
+		            								quest.innerHTML = "Какое слово?"
+		            								text1.innerHTML = "Какое событие позволяет выполнять код после щелчка мыши?"
+            										btn.onclick = function(){
+		            									if (document.getElementById("login").value == "onclick") {
+				            								score = score+1
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            											if (document.getElementById("login").value != "onclick") {
+				            								score = score+0
+				            								quest.innerHTML = "Какое слово?"
+				            								text1.innerHTML = "Какой метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени?"
+		            										btn.onclick = function(){
+				            									if (document.getElementById("login").value == "setInterval()") {
+						            								score = score+1
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}if (document.getElementById("login").value != "setInterval()") {
+						            								score = score+0
+						            								loc2_div.style.display = "none"
+						            								loc2_win.style.display = "block"
+						            								txtscore.innerHTML = score
+						            								btn1.onclick = function(){
+						            									main.style.display = "block"
+																		loc2.style.display = "none"
+																		loc2.style.display = "none"
+		            												}
+            													}
+            												}
+            											}
+            										}
+            									}
+            								}
+            							}
+            						}
+            					}
+            				}
+            			}
+            		}          		
+        		}
+
+
+
+			}			
+		}
+		location1.onclick = function(){
+			main.style.display = "none"
+			loc1.style.display = "block"
+			btn2.onclick = function(){
+				loc2_teor2.style.display = "none"
+				loc2_teor1.style.display = "block"
+				btn3.onclick = function(){
+					main.style.display = "block"
+					loc1.style.display = "none"
+				}
+			}
+			
+		}
+	</script>
+</body>
+</html>
